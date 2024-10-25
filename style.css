@@ -1,29 +1,45 @@
 @media only screen and (min-width: 768px) 
 {
-    *
+  
+  *
     {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     }
-    .main
-    {
+  
+    .main {
         display: flex;
-        flex-direction:column;
-        width:100%;
-        height:100vh;
-        background-color: red;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-image: url(Pics/mobile_intro_bg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%; /* Ensures the image covers the entire container */
+        background-position: center; /* Centers the image */
     }
+    
    .MainHeader
    {
-    height: 90px;
+    height: 200px;
     width:100%;
    }
 .blackdiv
 {
-    background-color: #4B4B4B; 
-    height:40%;
+    background-color:#3E3E3E;
+    height:30%;
     width:100%;
+}
+#topImg
+{
+    width:20%;
+    height: 100%;
+    margin-left: 70%;
+}
+#topImg>img
+{
+    width:90%;
+    height:100%;
 }
 .MainBar
 {
@@ -55,19 +71,26 @@
 .NavClass > * { /* Target all direct children of NavClass */
     margin-left:10% ; /* Add right margin */
     margin-top: 2%;
+    cursor: pointer;
 }
-.NavClass > :nth-child(0) { /* Target all direct children of NavClass */
-    color:orange; /* Add right margin */
+.NavClass > :nth-child(1) {
+    color:#EC5242
+}
+.NavClass > :nth-child(6) {
+
+    border:5px solid #ff5500;
+    color: #ff5500;
+    height:50%;
 }
 /* Optional: Remove the margin from the last child */
 .NavClass > *:last-child {
     margin-right: 0; /* No margin on the last item */
 }
+
 .MainPage
 {
     width:70%;
     height: 100%;
-    background-color: green;
     margin: 10%;
     margin-right: 50px;
     margin-bottom: 5%;
@@ -82,28 +105,39 @@
     height: 100%; /* Set to 100% to fill the parent height */
     margin: 0; /* Remove default margin to prevent overflow */
     font-size:30px; /* You can adjust this or use a specific size */
-    color:orange;
+    color:#EC5242
 }
 
 
 #Asia {
     width: 80%; /* Set width to fill most of the parent */
-    height: 150px; /* Set a fixed height */
+    height: 40%;
+  
+}
+
+#Asia > p {
+    width: 60%; /* Set to 100% to fill the parent width */
+    height: 100%; /* Set to 100% to fill the parent height */
+    margin: 0; /* Remove default margin to prevent overflow */
+    font-size: 50px; /* Font size */
+    color:#EC5242
     
 }
 
-#Asia > p {
-    width: 60%; /* Set to 100% to fill the parent width */
-    height: 100%; /* Set to 100% to fill the parent height */
-    margin: 0; /* Remove default margin to prevent overflow */
-    font-size: 50px; /* Font size */
-}
-
 #small {
-    margin-top: 3%;
-    width: 40%; /* Set width to fill most of the parent */
-    height: 80px; /* Set a fixed height */
-    background-color: white;
+    border: 5px solid rgba(255, 255, 255, 0.492);;
+    margin-top: 2%;
+    width: 60%; /* Set width to fill most of the parent */
+    height: 20%;
+    background-color:whitesmoke;
+}
+
+#small > p {
+    padding-top: 10px;    /* Padding at the top */
+    padding-bottom: 10px; /* Padding at the bottom */
+    padding-left: 10px;   /* Padding on the left */
+    padding-right: 10px;  /* Padding on the right */
+
 }
 
 #Asia > p {
@@ -111,13 +145,15 @@
     height: 100%; /* Set to 100% to fill the parent height */
     margin: 0; /* Remove default margin to prevent overflow */
     font-size: 50px; /* Font size */
+    
+    
 }
 
 #blakia {
     width: 40%; /* Set width to fill most of the parent */
-    height: 80px; /* Set a fixed height */
-    background-color:yellow;
-    padding-top: 10;
+    height: 60px; /* Set a fixed height */
+    padding-top: 10px;
+
 }
 
 #blakia> p {
@@ -125,20 +161,239 @@
     height: 100%; /* Set to 100% to fill the parent height */
     margin: 0; /* Remove default margin to prevent overflow */
     font-size: 30px; /* Font size */
+    color: #4B4B4B; 
+    font-weight: bolder;
 }
 
 #lastLine {
     width: 40%; /* Set width to fill most of the parent */
     height: 50px; /* Set a fixed height */
-    background-color:orange;
-    
+ 
 }
 
 #lastLine> p {
     width: 100%; /* Set to 100% to fill the parent width */
     height: 100%; /* Set to 100% to fill the parent height */
     margin: 0; /* Remove default margin to prevent overflow */
-    font-size: 30px; /* Font size */
+    font-size: 18px; /* Font size */
+    color: #4B4B4B; 
 }
 
+.Programs
+{
+    width:100%;
+    height: 80vh;
+    background-image: url(Pics/wp8529160.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-color: red;
+}
+
+.SubmainProgram
+{
+    width:80%;
+    height: 100%;
+    margin-left: 8%;
+}
+.ProgramHeading {
+    width: 20%;
+    height: 25%; /* Height of the parent */
+    margin-left: 40%; /* Centering horizontally */
+    padding-top: 5%; /* Adjusted padding to vertically center */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the content vertically */
+}
+
+.ProgramHeading > p {
+    width: 100%; /* Set to 100% to fill the parent width */
+    margin: 0; /* Remove default margin to prevent overflow */
+    font-size: 22px; /* Font size */
+    color: white; /* Text color */
+    text-align: center; /* Center the text horizontally */
+    font-weight: bold; /* Bold text */
+    padding: 2px 0; /* Reduced padding to fit content properly */
+    border-radius: 5px; /* Optional rounded corners */
+    position: relative; /* Relative for pseudo-element */
+}
+
+.ProgramHeading > p::after {
+    content: '';
+    display: block;
+    width: 40px; /* Set the width of the line */
+    height: 2px; /* Set the height of the line */
+    background-color: red; /* Color of the line */
+    margin: 5px auto 0 auto; /* Center the line horizontally */
+}
+.Cards {
+    width: 100%;
+    height: 45%;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.CardsGrid {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+    grid-template-rows: 1fr; /* 1 row */
+    column-gap: 0.5%;
+}
+
+.CardsGrid > .Items {
+
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3); /* Transparent background */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.CardsGrid > .Items:hover {
+    transform: scale(1.05); /* Optional hover effect */
+    border:2px solid white;
+}
+
+}
+.Images
+{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height: 30%;
+    align-items: center;
+    padding-top: 3%;
+}
+.Images>img
+{
+    width: 30%;
+    height: 80%;
+    padding-left: 1%;
+}
+
+.titles {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    width: 100%;
+    height: 17%;
+}
+
+.titles > p {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Centers the text horizontally */
+    align-items: center; /* Centers the text vertically */
+    width: 100%; /* Full width of the parent */
+    height: 80%; /* Adjust the height as needed */
+    margin: 0; /* Remove default margins */
+    text-align: center; /* Ensure text is centered */
+color:yellow;
+font-size: 20px;
+font-weight: bolder;
+}
+
+.Description {
+    width: 100%;
+    height: 45%;
+    display: flex; /* Add Flexbox */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.Description > p {
+    color: white;
+    width: 80%;
+    height: 100%;
+    text-align: center; /* Center the text horizontally */
+    margin: 0; /* Remove default margin */
+    display: flex;
+    align-items: center; /* Align text inside the paragraph vertically */
+    justify-content: center; /* Align text inside the paragraph horizontally */
+}
+
+.last {
+    display: inline-block;
+    font-size: 16px;  /* Adjust size as needed */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;  /* White text */
+    border-top: 2px solid #fff;  /* Line above the text */
+    padding-top: 10px;  /* Space between text and line */
+    text-align: center;
+    letter-spacing: 2px;  /* Adjust spacing for effect */
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-left: 37%;
+    width: fit-content;  /* Adjust to fit text content */
+    cursor: pointer;  /* Pointer to indicate it's clickable */
+}
+
+.Featured
+{
+    width:100%;
+    min-height: 100vh;
+    padding-left: 7%;
+    padding-right:7%;
+    background-color: black;
+}
+
+.GridForCard
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 1%;
+    row-gap: 2%;
+    width:100%;
+    height:100%;
+}
+
+.ItemsGrid
+{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height: 100%;
+    padding-top: 2%;
+}
+
+.ImageDiv
+{
+    width:30%;
+    height: 80%;
+}
+.ImageDiv>img
+{
+    width:100%;
+    height: 100%;
+}
+
+.contentdiv
+{
+    width: 60%;
+    height: 100%;
+    margin-left: 3%;
+}
+.mainH
+{
+    width: 50%;
+    height: 20%; 
+}
+.mainH>p
+{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.des
+{
+    width: 100%;
+    height: 30%;
+}
+.des>p
+{
+color:red;
 }
