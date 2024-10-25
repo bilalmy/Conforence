@@ -21,7 +21,7 @@
    }
 .blackdiv
 {
-    background-color: rgb(15, 10, 10);
+    background-color: #4B4B4B; 
     height:40%;
     width:100%;
 }
@@ -72,17 +72,73 @@
     margin-right: 50px;
     margin-bottom: 5%;
 }
-#hello
-{
-    width:40%;
+#hello {
+    width: 40%;
     height: 10%;
-    background-color: yellow;
 }
-#hello>p
-{
-    width:100%;
-    height: 100%;
-    font-size: bolder;
+
+#hello > p {
+    width: 100%; /* Set to 100% to fill the parent width */
+    height: 100%; /* Set to 100% to fill the parent height */
+    margin: 0; /* Remove default margin to prevent overflow */
+    font-size:30px; /* You can adjust this or use a specific size */
+    color:orange;
+}
+
+
+#Asia {
+    width: 80%; /* Set width to fill most of the parent */
+    height: 150px; /* Set a fixed height */
+    
+}
+
+#Asia > p {
+    width: 60%; /* Set to 100% to fill the parent width */
+    height: 100%; /* Set to 100% to fill the parent height */
+    margin: 0; /* Remove default margin to prevent overflow */
+    font-size: 50px; /* Font size */
+}
+
+#small {
+    margin-top: 3%;
+    width: 40%; /* Set width to fill most of the parent */
+    height: 80px; /* Set a fixed height */
+    background-color: white;
+}
+
+#Asia > p {
+    width: 60%; /* Set to 100% to fill the parent width */
+    height: 100%; /* Set to 100% to fill the parent height */
+    margin: 0; /* Remove default margin to prevent overflow */
+    font-size: 50px; /* Font size */
+}
+
+#blakia {
+    width: 40%; /* Set width to fill most of the parent */
+    height: 80px; /* Set a fixed height */
+    background-color:yellow;
+    padding-top: 10;
+}
+
+#blakia> p {
+    width: 100%; /* Set to 100% to fill the parent width */
+    height: 100%; /* Set to 100% to fill the parent height */
+    margin: 0; /* Remove default margin to prevent overflow */
+    font-size: 30px; /* Font size */
+}
+
+#lastLine {
+    width: 40%; /* Set width to fill most of the parent */
+    height: 50px; /* Set a fixed height */
+    background-color:orange;
+    
+}
+
+#lastLine> p {
+    width: 100%; /* Set to 100% to fill the parent width */
+    height: 100%; /* Set to 100% to fill the parent height */
+    margin: 0; /* Remove default margin to prevent overflow */
+    font-size: 30px; /* Font size */
 }
 
 }
