@@ -1,0 +1,88 @@
+@media only screen and (min-width: 768px) 
+{
+    *
+    {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    .main
+    {
+        display: flex;
+        flex-direction:column;
+        width:100%;
+        height:100vh;
+        background-color: red;
+    }
+   .MainHeader
+   {
+    height: 90px;
+    width:100%;
+   }
+.blackdiv
+{
+    background-color: rgb(15, 10, 10);
+    height:40%;
+    width:100%;
+}
+.MainBar
+{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    background-color:white;
+    height:60%;
+}
+.LogoPic
+{
+    width:30%;
+    height: 100%;
+    padding-left: 10%;
+}
+.LogoPic>img
+{
+    width:40%;
+    height: 100%;
+}
+
+.NavClass {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 100%;
+}
+
+.NavClass > * { /* Target all direct children of NavClass */
+    margin-left:10% ; /* Add right margin */
+    margin-top: 2%;
+}
+.NavClass > :nth-child(0) { /* Target all direct children of NavClass */
+    color:orange; /* Add right margin */
+}
+/* Optional: Remove the margin from the last child */
+.NavClass > *:last-child {
+    margin-right: 0; /* No margin on the last item */
+}
+.MainPage
+{
+    width:70%;
+    height: 100%;
+    background-color: green;
+    margin: 10%;
+    margin-right: 50px;
+    margin-bottom: 5%;
+}
+#hello
+{
+    width:40%;
+    height: 10%;
+    background-color: yellow;
+}
+#hello>p
+{
+    width:100%;
+    height: 100%;
+    font-size: bolder;
+}
+
+}
